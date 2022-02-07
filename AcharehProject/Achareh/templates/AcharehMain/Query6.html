@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <h1>گزارش شماره6</h1>
+        <h2>ساعت کار نمایندگی های شهر تهران  </h2>
+        <hr/>
+        <table border = "1" >
+            <tr>
+                <th>ساعت های کاری</th>
+            </tr>
+            {%for datadisplay in sqlserverconn%}
+            <tr>
+                <td>{{datadisplay.WorkingHour}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="./AcharehUI" > بازگشت به عقب</a>
+    </body>
+</html>

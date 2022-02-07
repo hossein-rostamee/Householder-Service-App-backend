@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <h1>گزارش شماره 5</h1>
+        <h2>سطح تخصص متخصصی که در مکان قزوین به مشتری ای که شهر او قزوین است خدمت ارائه داده است  </h2>
+        <hr/>
+        <table border = "1" >
+            <tr>
+                <th>سطح متخصص</th>
+                <th>نام و نام خانوادگی</th> 
+            </tr>
+            {%for datadisplay in sqlserverconn%}
+            <tr>
+                <td>{{datadisplay.ProfLevel}}</td>
+                <td>{{datadisplay.NameAndFamily}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="./AcharehUI" > بازگشت به عقب</a>
+    </body>
+</html>

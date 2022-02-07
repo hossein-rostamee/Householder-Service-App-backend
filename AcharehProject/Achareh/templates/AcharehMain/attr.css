@@ -1,0 +1,10 @@
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+    border: 10px;
+    border-color: black;
+}
+.atag {
+    margin: 200px;
+
+}

@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <h1>گزارش شماره 4</h1>
+        <h2>نام و نام خانوادگی پشتیبانی که عضو شماره 103 با او تماس گرفته است   </h2>
+        <hr/>
+        <table border = "1" >
+            <tr>
+                <th>نام و نام خانوادگی</th> 
+            </tr>
+            {%for datadisplay in sqlserverconn%}
+            <tr>
+                <td>{{datadisplay.NameAndFamily}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="./AcharehUI" > بازگشت به عقب</a>
+    </body>
+</html>

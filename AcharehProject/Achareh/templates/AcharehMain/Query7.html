@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <h1>گزارش شماره7</h1>
+        <h2>تعداد باری که متخصصی که تخصصش آب و فاضلاب است، خدمت ارائه داده است  </h2>
+        <hr/>
+        <table border = "1" >  
+            <tr>
+                <th>تعداد دفعات </th>
+            </tr>
+            {%for datadisplay in sqlserverconn%}
+            <tr>
+                <td>{{datadisplay.ProfNumber}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="./AcharehUI" > بازگشت به عقب</a>
+    </body>
+</html>

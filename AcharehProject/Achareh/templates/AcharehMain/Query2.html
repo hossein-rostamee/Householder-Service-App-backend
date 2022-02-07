@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <h1>گزارش شماره 2</h1>
+        <h2>شرح شکایت هایی که از متخصص شماره 3 شده است  </h2>
+        <hr/>
+        <table border = "1" >
+            <tr>
+                <th>شرح شکایت</th>
+            </tr>
+            {%for datadisplay in sqlserverconn%}
+            <tr>
+                <td>{{datadisplay.ComplainDesc}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="./AcharehUI" > بازگشت به عقب</a>
+    </body>
+</html>

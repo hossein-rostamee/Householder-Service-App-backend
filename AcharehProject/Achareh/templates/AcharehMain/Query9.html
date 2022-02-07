@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <h1>گزارش شماره9</h1>
+        <h2>  آدرس پشتیبانی که مشتری ای به نام اکبر غلامی با اون تماس گرفته است  </h2>
+        <hr/>
+        <table border = "1" >  
+            <tr>
+                <th>شهر</th>   
+                <th>خیابان</th>   
+                <th>پلاک</th>   
+                <th>کوچه</th>   
+            </tr>
+            {%for datadisplay in sqlserverconn%}
+            <tr>
+                <td>{{datadisplay.City}}</td>
+                <td>{{datadisplay.StreetNo}}</td>
+                <td>{{datadisplay.HouseNo}}</td>
+                <td>{{datadisplay.Alley}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="./AcharehUI" > بازگشت به عقب</a>
+    </body>
+</html>

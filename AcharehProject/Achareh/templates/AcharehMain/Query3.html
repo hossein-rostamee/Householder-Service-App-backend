@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        <h1>گزارش شماره 3</h1>
+        <h2>میانگین امتیاز و و امتیاز کار متخصص شماره 2 که برای مشتری شماره 101 خدمت کرده است </h2>
+        <hr/>
+        <table border = "1" >
+            <tr>
+                <th>میانگین امتیاز</th>
+                <th>امتیاز کل متخصص</th>
+            </tr>
+            {%for datadisplay in sqlserverconn%}
+            <tr>
+                <td>{{datadisplay.AvgPoints}}</td>
+                <td>{{datadisplay.ExpertPoint}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="./AcharehUI" > بازگشت به عقب</a>
+    </body>
+</html>
